@@ -1,0 +1,29 @@
+#include<stdio.h>
+void main()
+{
+	int a, b, c,d,f;
+	printf("please enter an integer witin three digits:");
+	scanf_s("%d", &a);
+	if (0 <= a && a <= 999)
+	{
+		if (0 <= a && a <= 9)
+		{
+			printf("位数:1\n倒叙输出:%d", a);
+		}
+		else if (10 <= a && a <= 99)
+		{
+			b = a / 10;
+			c = a % 10;
+
+			printf("位数:2\n倒叙输出:%d%d", c, b);
+		}
+		else if(100 <= a && a <= 999)
+		{b = a % 10;
+		c = a / 10;
+		d = c % 10;
+		f = a / 100;
+			printf("位数:3\n倒叙输出:%d%d%d", b, d,f); }
+	}
+	else { printf("error"); }
+}
+}
