@@ -8,7 +8,7 @@ void main()
 	{
 		if (0 <= a && a <= 9)
 		{
-			printf("位数:1\n倒叙输出:%d", a);
+			printf("位数:1\n倒序输出:%d", a);
 		}
 		else if (10 <= a && a <= 99)
 		{
